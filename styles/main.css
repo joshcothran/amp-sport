@@ -1,0 +1,47 @@
+/* Open Sans Light - font-weight: 300 */
+/* Open Sans Regular - font-weight: 400 */
+/* Open Sans Bold - font-weight: 700 */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  color: #666666;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h1.headline {
+  color: white;
+  text-align: center;
+  font-family: adelle, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4m8px;
+  text-shadow: 3px 3px 10px rgba(0 ,0, 0, .3);
+}
+
+p.info {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+dd {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+dt {
+  font-size: 14px;
+}

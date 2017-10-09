@@ -9,9 +9,13 @@
   <meta name="description" content="Patient rehab management from procedure through protocol completion">
   <meta name="keywords" content="keywords,here">
 
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
   <link rel="stylesheet" href="styles/adelle-pe.css">
+  <link rel="stylesheet" href="styles/Pe-icon-7-stroke.css">
 
   <!-- Lib  -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
@@ -26,27 +30,120 @@
 
 <body>
   <div class="container-fluid">
+
+    <!-- Splash/Menu -->
     <div class="row home-hero">
-      <div class="home-header">
-        <div class="logo-white"></div>
+      <div class="header home">
+        <div class="header-logo">
+          <a class="logo white" href="#">AMP Home</a>
+        </div>
+        <div class="header-menu">
+          <div class="hidden-xs">
+            <a class="menu home" href="solution.html">Solution</a>
+            <a class="menu home" href="pricing.html">Pricing</a>
+            <a class="menu home" href="about.html">About</a>
+            <a class="menu home" href="contact.html">Contact</a>
+            <a class="button menu" href="login.html">Login</a>
+          </div>
+          <div class="header-menu-mobile visible-xs-inline-block">
+            <nav class="navbar navbar-default">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="solution.html">Solution</a>
+                  </li>
+                  <li>
+                    <a href="pricing.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="login.html">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
       <h1 class="headline home">
         Patient rehab management from procedure
         <br/>through protocol completion
       </h1>
-      <button type="button text-center" class="btn cta home-header-btn">Schedule a Demo</button>
+      <a class="button cta home-header-btn">Schedule a Demo</a>
     </div>
 
-    <div class="row">
-      <h2 class="value-prop">Continuous Connected Care</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p class="info ">
-          Whether you are an elite athlete returning to competition or just leading an active lifestyle, AMP Recover will get you back to the things you love. Our platform facilitates a team based approach to rehabilitation, providing Physicians, Physical Therapists and Patients with the tools they need to ensure effective, efficient care.
-        </p>
+    <!-- Intro -->
+    <div class="intro">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="intro-header">Continuous Connected Care</h2>
+        </div>
+        <div class="col-xs-8 col-xs-offset-2">
+          <p class="info ">
+            Whether you are an elite athlete returning to competition or just leading an active lifestyle, AMP Recover will get you back to the things you love. Our platform facilitates a team based approach to rehabilitation, providing Physicians, Physical Therapists and Patients with the tools they need to ensure effective, efficient care.
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- Cards -->
+    <div class="row">
+      <!-- Engage Patients -->
+      <div class="card col-sm-4 col-xs-12">
+        <div class="card-icon">
+          <i id="icon-engage"></i>
+        </div>
+        <div class="card-desc">
+          <div>
+            <h5 class="card-desc-h5">Engage Patients</h5>
+            <p class="card-desc-p">
+              Manage patient relationships and allow them to take an active role in their recovery
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Improve Outcomes -->
+      <div class="card dark col-sm-4 col-xs-12">
+        <div class="card-icon">
+          <i id="icon-outcomes"></i>
+        </div>
+        <div class="card-desc">
+          <div>
+            <h5 class="card-desc-h5">Improve Outcomes</h5>
+            <p class="card-desc-p">
+                Promote program adherence and participation
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Increase Productivity -->
+      <div class="card col-sm-4 col-xs-12">
+          <div class="card-icon">
+            <i class="pe-7s-clock"></i>
+          </div>
+          <div class="card-desc">
+            <div>
+              <h5 class="card-desc-h5">Increase Productivity</h5>
+              <p class="card-desc-p">
+                  Assign protocols automatically based on procedure type
+                  and date, customize as necessary
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
 
     <div class="row">
       <h1 class="headline">Amp Recover</h1>

@@ -1,7 +1,87 @@
-/* .container-fluid {
-  padding: 0;
-} */
+/* Gutter overrides */
+[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dictionary Term */
 dt {
   font-weight: 400;
+}
+
+
+/* Mobile Menu */
+.navbar {
+  margin: 0;
+  border: 0;
+}
+
+.navbar-collapse {
+  border-top-width: 0px;
+}
+
+.navbar-collapse,
+.navbar-collapse.collapse {
+  transform: translate(67px, 40px);
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-toggle,
+.navbar-toggle.collapsed {
+  margin: 0px;
+  transform: translate(38px, 9px);
+}
+
+.navbar-default .navbar-toggle {
+  border: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  border-top: 1px white solid;
+  background-color: rgba(51, 153, 204, 0.8);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #0066cc;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
 }

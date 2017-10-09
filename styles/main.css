@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
+  -moz-osx-font-smoothing: grayscale;
   color: #666666;
 }
 
@@ -28,13 +28,24 @@ h1.headline {
   font-style: normal;
   font-weight: 400;
   font-size: 4m8px;
-  text-shadow: 3px 3px 10px rgba(0 ,0, 0, .3);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
 }
 
 p.info {
   text-align: center;
   font-size: 16px;
   line-height: 30px;
+}
+
+@media screen and (max-width: 660px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  p.info {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 dd {
@@ -45,3 +56,76 @@ dd {
 dt {
   font-size: 14px;
 }
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header-logo {
+  flex: 0 1 auto;
+  align-self: center;
+  display: flex;
+}
+
+.header-menu {
+  flex: 1 1 auto;
+  text-align: right;
+  padding-right: 42px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header-menu-mobile {
+  position: absolute;
+  top: -30px;
+}
+
+a.menu {
+  color: #0066cc;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0px 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.button {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 12px 15px;
+  text-decoration: none;
+}
+
+a.button:hover {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+a.button.menu {
+  background-color: #3399cc;
+  color: white;
+  padding: 6px 18px;
+}
+
+a.button.menu:active {
+  background-color: #2e8ab8;
+}
+
+.logo {
+  display: inline-block;
+  cursor: pointer;
+  background-image: url(../img/logo.png);
+  width: 80px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0px 30px;
+  font-size: 0;
+  color: transparent;
+}
+

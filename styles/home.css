@@ -20,20 +20,12 @@
   }
 }
 
-.home-header {
-  height: 72px;
+.header.home {
+  background-color: transparent;
 }
 
-.logo-white {
-  position: absolute;
+.logo.white {
   background-image: url(../img/logo-white.png);
-  width: 80px;
-  height: 45px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  margin-left: 30px;
-  margin-top: 12px;
 }
 
 .home-header-btn {
@@ -71,13 +63,86 @@ h1.headline.home {
   }
 }
 
-h2.value-prop {
+h2.intro-header {
   text-align: center;
 }
 
-button.btn.cta {
+a.menu.home {
+  color: white;
+}
+
+a.button.cta {
+  font-size: 18px;
   background-color: #ff9900;
   color: white;
-  font-size: 18px;
-  padding: 12px 15px;
+}
+
+a.button.cta:active {
+  background-color: #e58a00;
+}
+
+.intro {
+  height: 296px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  height: 272px;
+  background-color: #23A0E0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card.dark {
+  background-color: #2793D5;
+}
+
+.card-icon {
+  font-size: 72px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-icon i {
+  margin-bottom: 10px;
+}
+
+#icon-engage,
+#icon-outcomes {
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#icon-engage {
+  background-image: url(../img/icon-engage.png);
+}
+
+#icon-outcomes {
+  background-image: url(../img/icon-outcomes.png);
+}
+
+.card-desc {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.card-desc-h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-desc-p {
+  font-weight: 300;
+  font-size: 12px;
 }

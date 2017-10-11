@@ -37,26 +37,6 @@ p.info {
   line-height: 30px;
 }
 
-@media screen and (max-width: 660px) {
-  h2 {
-    font-size: 28px;
-  }
-
-  p.info {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-dd {
-  font-weight: 300;
-  font-size: 24px;
-}
-
-dt {
-  font-size: 14px;
-}
-
 .header {
   height: 60px;
   display: flex;
@@ -129,3 +109,13 @@ a.button.menu:active {
   color: transparent;
 }
 
+@media screen and (max-width: 660px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  p.info {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

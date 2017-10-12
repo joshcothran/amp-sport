@@ -10,7 +10,7 @@
 
 #hero-footer {
   height: 280px;
-  background: url(../img/hero-footer-bg.jpg) no-repeat;
+  background: url(../img/blue-bg.jpg) no-repeat;
   box-shadow: none;
   background-repeat: no-repeat;
   background-position: center center;
@@ -45,8 +45,6 @@
 
 
 h1.headline.home {
-  font-family: adelle, serif;
-  font-style: normal;
   font-weight: 400;
   margin-top: 150px;
 }
@@ -248,7 +246,7 @@ td.value-detail {
   }
 
   .row.value-prop.engage {
-    height: 960px;
+    height: auto;
   }
 
   .column.value-prop-copy.engage {
@@ -260,7 +258,7 @@ td.value-detail {
   }
 
   .row.value-prop.outcomes {
-    height: 670px;
+    height: auto;
   }
 
   .column.value-prop-copy.outcomes {
@@ -275,7 +273,7 @@ td.value-detail {
   }
 
   .row.value-prop.productivity {
-    height: 890px;
+    height: auto;
   }
 
   .column.value-prop-copy.productivity {
@@ -285,4 +283,9 @@ td.value-detail {
   .value-prop-img.productivity {
     height: 480px;
   }
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }

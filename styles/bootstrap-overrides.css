@@ -30,11 +30,6 @@ dt {
   border-top-width: 0px;
 }
 
-.navbar-collapse,
-.navbar-collapse.collapse {
-  transform: translate(67px, 40px);
-}
-
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -43,7 +38,9 @@ dt {
 .navbar-toggle,
 .navbar-toggle.collapsed {
   margin: 0px;
-  transform: translate(38px, 9px);
+  position: absolute;
+  top: 12px;
+  right: 0px;
 }
 
 .navbar-default .navbar-toggle {

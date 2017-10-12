@@ -42,15 +42,42 @@
   background-color: transparent;
 }
 
-.logo.white {
-  background-image: url(../img/logo-white.png);
-}
+
 
 h1.headline.home {
   font-family: adelle, serif;
   font-style: normal;
   font-weight: 400;
   margin-top: 150px;
+}
+
+/* @screen-md-min */
+@media (min-width: 992px) {
+  h1.headline.home {
+    font-size: 40px;
+  }
+}
+
+/* @screen-sm-max */
+@media (max-width: 991px) {
+  h1.headline.home {
+    font-size: 30px;
+  }
+}
+
+/* @screen-xs-max */
+@media (max-width: 767px) {
+  h1.headline.home {
+    font-size: 20px;
+  }
+}
+
+/* custom (xxs) */
+@media (max-width: 440px) {
+  h1.headline.home {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 
 h2.intro-header {
@@ -82,7 +109,6 @@ a.button.cta:active {
 
 
 /* Cards */
-
 .card {
   height: 272px;
   background-color: #23a0e0;
@@ -141,13 +167,12 @@ a.button.cta:active {
 
 
 /* Value Proposition */
-
-.value-prop {
+.row.value-prop {
   height: 530px;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
 }
 
-.value-prop-copy {
+.column.value-prop-copy {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,32 +180,35 @@ a.button.cta:active {
   padding: 0px 20px;
 }
 
-.value-prop-h2 {
-  padding-bottom: 48px;
+h2.value-prop-h2 {
+  margin-top: 10px;
+  margin-bottom: 48px;
 }
 
-.value-icon {
+td.value-icon {
   text-align: center;
   font-size: 26px;
   color: #ffa622;
   padding-right: 20px;
+  vertical-align: center;
 }
 
-.value-headline {
+td.value-headline {
   font-weight: 300;
   font-size: 24px;
+  vertical-align: center;
 }
 
-.value-detail {
+td.value-detail {
   font-size: 14px;
   padding-bottom: 32px;
 }
 
-.value-prop-img {
+.column.value-prop-img {
   height: inherit;
 }
 
-.value-prop-img.engage {
+.column.value-prop-img.engage {
   background-position-x: center;
   background-position-y: 100%;
   background-size: auto 475px;
@@ -188,7 +216,7 @@ a.button.cta:active {
   background-image: url(../img/value-prop-engage.png);
 }
 
-.value-prop-img.productivity {
+.column.value-prop-img.productivity {
   background-position-x: center;
   background-position-y: 100%;
   background-size: auto 475px;
@@ -196,7 +224,7 @@ a.button.cta:active {
   background-image: url(../img/value-prop-productivity.png);
 }
 
-.value-prop-img.outcomes {
+.column.value-prop-img.outcomes {
   background-position-x: right;
   background-position-y: 50%;
   background-size: 100% auto;
@@ -204,77 +232,57 @@ a.button.cta:active {
   background-image: url(../img/value-prop-outcomes.png);
 }
 
-
-@media (max-width:767px) {
-  .value-prop-h2 {
-    padding-bottom: 24px;
+/* @screen-xs-max */
+@media (max-width: 767px) {
+  h2.value-prop-h2 {
+    margin-bottom: 24px;
   }
 
-  .value-prop.engage {
-    height: 940px;
+  td.value-headline {
+    font-weight: 300;
+    font-size: 18px;
   }
 
-  .value-prop-copy.engage {
-    height: 460px;
+  td.value-detail {
+    padding-bottom: 18px;
   }
 
-  .value-prop-img.engage {
+  .row.value-prop.engage {
+    height: 960px;
+  }
+
+  .column.value-prop-copy.engage {
     height: 480px;
   }
 
-  .value-prop.outcomes {
+  .column.value-prop-img.engage {
+    height: 480px;
+  }
+
+  .row.value-prop.outcomes {
     height: 670px;
   }
 
-  .value-prop-copy.outcomes {
+  .column.value-prop-copy.outcomes {
     height: 400px;
   }
 
-  .value-prop-img.outcomes {
+  .column.value-prop-img.outcomes {
     height: 230px;
     background-size: 310px auto;
     background-repeat: no-repeat;
     background-image: url(../img/value-prop-outcomes.png);
   }
 
-  .value-prop.productivity {
+  .row.value-prop.productivity {
     height: 890px;
   }
 
-  .value-prop-copy.productivity {
+  .column.value-prop-copy.productivity {
     height: 410px;
   }
 
   .value-prop-img.productivity {
     height: 480px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  h1.headline.home {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 899px) {
-  h1.headline.home {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  h1.headline.home {
-    font-size: 20px;
-  }
-
-  .value-headline {
-    font-weight: 300;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  h1.headline.home {
-    font-size: 16px;
   }
 }

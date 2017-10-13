@@ -83,11 +83,11 @@ h2.headline-sub {
   }
 }
 
-
 p.info {
   text-align: center;
   font-size: 16px;
   line-height: 30px;
+  margin-bottom: 0px;
 }
 
 /* .screen-xs-max */
@@ -173,6 +173,7 @@ a.button.menu {
   background-color: #3399cc;
   color: white;
   padding: 6px 18px;
+  margin-left: 16px;
 }
 
 a.button.menu:active {

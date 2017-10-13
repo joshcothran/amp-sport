@@ -42,8 +42,6 @@
   background-color: transparent;
 }
 
-
-
 h1.headline.home {
   font-weight: 400;
   margin-top: 150px;
@@ -282,7 +280,6 @@ td.value-detail {
     height: 480px;
   }
 }
-
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;

@@ -87,6 +87,10 @@ h2.headline-sub {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 p.info {
   text-align: center;
   font-size: 16px;

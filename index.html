@@ -39,7 +39,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid hidden">
     <!-- Splash/Menu -->
     <div class="row home-hero">
       <div class="header home">
@@ -364,12 +364,22 @@
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.imgpreload.min.js"></script>
+  <script src="js/jquery.stayInWebApp.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(function () { $.stayInWebApp(); });
+      $.imgpreload('img/biker.jpg', function () {
+        $('.container-fluid').removeClass('hidden');
+      });
+    });
+  </script>
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script> -->
-  <script src="js/jquery.stayInWebApp.min.js"></script>
-  <script>$(function () { $.stayInWebApp(); });</script>
+
+
 </body>
 
 </html>

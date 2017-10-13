@@ -245,3 +245,11 @@ a.logo.white {
   justify-content: center;
   align-items: center;
 }
+
+/* Info panel for Pricing/Contact */
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 142px;
+}

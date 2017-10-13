@@ -1,9 +1,19 @@
-body {
+.row.contact {
   background-color: #fbfbfb;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
 }
 
-p.info {
-  height: 142px;
-  display: table-cell;
-  vertical-align: middle;
+.col-contact form {
+  margin: 40px 0;
+}
+
+@media (max-width: 767px) {
+  .col-contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-contact form {
+    width: 300px;
+  }
 }

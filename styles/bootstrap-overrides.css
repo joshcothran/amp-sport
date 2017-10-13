@@ -14,9 +14,16 @@
   padding: 0;
 }
 
-/* Dictionary Term */
-dt {
+
+/* Form Elements */
+label {
   font-weight: 400;
+  font-size: 14px;
+}
+
+.form-control {
+  height: 48px;
+  padding: 13px 12px;
 }
 
 
@@ -24,7 +31,6 @@ dt {
 .nav.navbar-nav {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 .navbar {
   margin: 0;

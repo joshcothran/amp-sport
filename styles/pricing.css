@@ -7,13 +7,6 @@ row.pricing {
   display: block;
 }
 
-.info-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 142px;
-}
-
 .price-box {
   height: 424px;
   width: 290px;

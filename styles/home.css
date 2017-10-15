@@ -80,11 +80,21 @@ h1.headline.home {
   }
 }
 
+.col-xxs-visible {
+  display: none;
+}
+
 /* custom (xxs) */
 @media (max-width: 440px) {
-  h1.headline.home {
-    font-size: 14px;
-    font-weight: 500;
+  .col-xxs-visible {
+    display: inline;
+  }
+}
+
+/* custom (xxs) */
+@media (max-width: 441px) {
+  .col-xxs-hidden {
+    display: none;
   }
 }
 
@@ -116,11 +126,10 @@ a.button.cta:active {
 
 /* Cards */
 .card {
-  height: 280px;
   background-color: #23a0e0;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px 20px;
   box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -129,7 +138,7 @@ a.button.cta:active {
 
 .card-icon {
   font-size: 72px;
-  height: 120px;
+  height: 125px;
   display: flex;
   align-items: flex-end;
 }
@@ -157,19 +166,26 @@ a.button.cta:active {
 }
 
 .card-desc {
-  height: 120px;
+  height: 125px;
   display: flex;
 }
 
 .card-desc-h5 {
   font-size: 20px;
-  margin-top: 0px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .card-desc-h5 {
+    font-size: 18px;
+  }
 }
 
 .card-desc-p {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 

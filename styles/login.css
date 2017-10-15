@@ -1,0 +1,19 @@
+.row.login {
+  background-color: #fbfbfb;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.3);
+}
+
+.col-login form {
+  margin: 40px 0;
+}
+
+@media (max-width: 767px) {
+  .col-login {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-login form {
+    width: 300px;
+  }
+}

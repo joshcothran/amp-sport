@@ -99,12 +99,21 @@
       </div>
     </div>
 
-    <!-- Intro -->
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 info-wrapper">
-        <p class="info">
-          Log in...
-        </p>
+    <div class="row login">
+      <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-login">
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <a href="#" class="button standard" onclick="$(this).closest('form').submit()">
+            Log In
+          </a>
+        </form>
       </div>
     </div>
 

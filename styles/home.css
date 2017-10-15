@@ -116,7 +116,7 @@ a.button.cta:active {
 
 /* Cards */
 .card {
-  height: 272px;
+  height: 280px;
   background-color: #23a0e0;
   color: white;
   text-align: center;
@@ -157,12 +157,13 @@ a.button.cta:active {
 }
 
 .card-desc {
-  flex: 1 1 auto;
+  height: 120px;
   display: flex;
 }
 
 .card-desc-h5 {
   font-size: 20px;
+  margin-top: 0px;
   text-transform: uppercase;
 }
 
